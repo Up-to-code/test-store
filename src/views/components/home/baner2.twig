@@ -1,0 +1,15 @@
+<div class="h-40 m-auto w-full">
+  {% for item in component.baner2 %}
+  <div class="border border-primary rounded-md w-[95%] h-36 p-4 mx-auto flex gap-6">
+    <img
+      src="{{ item.image }}"
+      alt="{{ item.title }}"
+      class="w-[70px] h-full object-contain rounded"
+    />
+    <div>
+      <p class="text-2xl font-bold">{{ item.title }}</p>
+      <p>{{ item.description }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
