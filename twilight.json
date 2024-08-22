@@ -871,6 +871,13 @@
                     "maxLength": 5
                 }
             ]
+        },
+        {
+            "key": "3f1125c6-3b5a-4cda-92ac-a1a22437f031",
+            "title": "logos",
+            "icon": "sicon-frame-image",
+            "path": "home.logos",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
