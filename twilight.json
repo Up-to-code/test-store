@@ -1016,7 +1016,7 @@
                             "value": null,
                             "multilanguage": false,
                             "required": false,
-                            "minLength": 60,
+                            "minLength": "30",
                             "maxLength": 1000
                         },
                         {
