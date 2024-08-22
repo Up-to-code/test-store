@@ -1063,6 +1063,21 @@
             "path": "home.catogry2",
             "fields": [
                 {
+                    "id": "string",
+                    "type": "string",
+                    "format": "text",
+                    "label": "String",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Placeholder text ..",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": 30
+                },
+                {
                     "id": "catogry",
                     "type": "collection",
                     "format": "collection",
