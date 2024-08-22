@@ -952,7 +952,7 @@
                             "required": false,
                             "step": 0.1,
                             "minimum": -10.1,
-                            "maximum": 100
+                            "maximum": "99999999999"
                         }
                     ],
                     "value": [],
