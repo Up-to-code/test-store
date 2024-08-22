@@ -960,6 +960,13 @@
                     "maxLength": "1"
                 }
             ]
+        },
+        {
+            "key": "717aef45-cf66-41d3-8afb-b9544bf75cca",
+            "title": "بانر مخصاص",
+            "icon": "sicon-store",
+            "path": "home.baner2",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
