@@ -927,7 +927,38 @@
             "title": "رابط وتساب",
             "icon": "sicon-whatsapp",
             "path": "home.whatsapp",
-            "fields": []
+            "fields": [
+                {
+                    "id": "whatsapp",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "whatsapp",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "whatsapp.url",
+                            "type": "string",
+                            "format": "url",
+                            "inputType": "url",
+                            "label": "URL",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://salla.sa",
+                            "icon": "sicon-link",
+                            "value": null,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
+                        }
+                    ],
+                    "value": [],
+                    "minLength": 1,
+                    "maxLength": "1"
+                }
+            ]
         }
     ],
     "support_url": "https://example.com",
