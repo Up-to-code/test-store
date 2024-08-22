@@ -46,8 +46,8 @@
   </div>
 
   {# Main Nav #}
-  <div id="mainnav" class="main-nav-container shadow-default bg-white">
-      <div class="inner bg-inherit">
+  <div id="mainnav" class="main-nav-container shadow-default   bg-gray-950 text-zinc-300">
+      <div class="inner bg-inherit ">
           <div class="container">
               <div class="flex items-stretch justify-between relative">
                   <div class="flex items-center">
@@ -64,18 +64,23 @@
                       </a>
                       <custom-main-menu></custom-main-menu>
                   </div>
-                  <div class="flex items-center justify-end">
-                      {% if user.type=='user' %}
-                        <salla-user-menu avatar-only show-header></salla-user-menu>
-                      {% else %}
-                          <button class="header-btn" aria-label="user-icon" onclick="salla.event.dispatch('login::open')">
-                            <i class="header-btn__icon sicon-user-circle"></i>
-                          </button>
+                  <div class="flex items-center justify-end gap-4">
+                    {% if user.type == 'user' %}
+                      <salla-user-menu avatar-only show-header class="text-white"></salla-user-menu>
+                    {% else %}
+                      <button class="bg-transparent p-2 rounded-full hover:bg-white hover:bg-opacity-10" aria-label="user-icon" onclick="salla.event.dispatch('login::open')">
+                        <i class="sicon-user-circle text-white text-xl"></i>
+                      </button>
+                    {% endif %}
+                    
+                    <salla-cart-summary class="relative ml-4 rtl:ml-[unset] rtl:mr-4">
+                      <i class="text-2xl sicon-shopping-bag text-white"></i>
+                      {% if cart.items_count > 0 %}
+                        <span class="absolute -top-1 -right-2 bg-primary text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">{{ cart.items_count }}</span>
                       {% endif %}
-                      <salla-cart-summary class="ml-4 rtl:ml-[unset] rtl:mr-4">
-                        <i slot="icon" class="header-btn__icon icon sicon-shopping-bag"></i>
-                      </salla-cart-summary>
+                    </salla-cart-summary>
                   </div>
+                  
               </div>
           </div>
       </div>

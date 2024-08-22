@@ -1,0 +1,15 @@
+// Define the color variable
+$primary-color: #2aca8f;
+
+// Use the variable in your styles
+.btn--close {
+  color: $primary-color;
+}
+
+.main-menu > li > a[href*="offer"] {
+  color: $primary-color;
+}
+
+.s-cart-summary-count {
+  display: none;
+}
