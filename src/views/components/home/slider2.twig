@@ -1,4 +1,4 @@
-<div class="min-h-52 w-full">
+<div class="min-h-52 w-full px-5">
     <salla-swiper
       id="main-slider-{{ position }}"
       auto-play
@@ -10,9 +10,9 @@
   
     {% for slide in component.slider2 %}
       <div class="swiper-slide mx-2 w-full min-h-[300px] lg:min-h-[528px] bg-gradient-to-r from-[#2F3C44] via-dark to-[#2F5351] rounded flex items-center justify-center">
-        <img class="w-[60%] object-contain rounded" src="{{ slide.image }}" alt="{{ slide.title }}" />
+        <img class="w-[50%] object-contain rounded max-w-[500px]" src="{{ slide.image }}" alt="{{ slide.title }}" />
         <div>
-         <p class="text-end text-white text-3xl font-semibold max-w-[300px] px-4">
+         <p class="text-end text-zinc-300 text-4xl font-medium max-w-[300px] px-4">
            {{ slide.title }}
          </p>
         </div>
