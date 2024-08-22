@@ -921,6 +921,13 @@
                     "maxLength": 5
                 }
             ]
+        },
+        {
+            "key": "0aa24b0c-f265-4836-a588-b03224c56a12",
+            "title": "رابط وتساب",
+            "icon": "sicon-whatsapp",
+            "path": "home.whatsapp",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
