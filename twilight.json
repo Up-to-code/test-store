@@ -824,10 +824,25 @@
                     "icon": "sicon-list-add",
                     "fields": [
                         {
+                            "id": "slider2.title_copy",
+                            "type": "string",
+                            "format": "text",
+                            "label": "title copy",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": true,
+                            "minLength": 6,
+                            "maxLength": 30
+                        },
+                        {
                             "id": "slider2.title",
                             "type": "string",
                             "format": "text",
-                            "label": "title",
+                            "label": "title_bulid",
                             "description": null,
                             "labelHTML": null,
                             "placeholder": "Placeholder text ..",
