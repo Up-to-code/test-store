@@ -1,14 +1,28 @@
 <div class="h-40 m-auto w-full">
   {% for item in component.baner2 %}
-  <div class="border border-primary rounded-md w-[95%] h-36 p-4 mx-auto flex gap-6">
+  <div
+    class="border border-primary rounded-md w-[95%] h-36 p-4 mx-auto flex gap-6 justify-around transition-all duration-300 hover:shadow-lg hover:shadow-primary/50"
+  >
     <img
       src="{{ item.image }}"
       alt="{{ item.title }}"
-      class="w-[70px] h-full object-contain rounded"
+      class="w-[70px] h-full object-contain rounded transition-all duration-300 hover:shadow-lg hover:shadow-primary/50"
     />
-    <div>
+    <div
+      class="transition-all duration-300 hover:shadow-lg hover:shadow-primary/50"
+    >
       <p class="text-2xl font-bold">{{ item.title }}</p>
-      <p>{{ item.description }}</p>
+      <p class="text-sm text-gray-200 max-w-[50%]">{{ item.description }}</p>
+    </div>
+    <div
+      class="h-full flex items-end transition-all duration-300 hover:shadow-lg hover:shadow-primary/50"
+    >
+      <a
+        href="{{ item.url }}"
+        class="btn btn-primary mt-4 transition-all duration-300 hover:shadow-lg hover:shadow-primary/50"
+      >
+        {{ item.button_text }}
+      </a>
     </div>
   </div>
   {% endfor %}
