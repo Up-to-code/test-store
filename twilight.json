@@ -949,10 +949,10 @@
                             "placeholder": "Input a number between -10.10 and 100.",
                             "icon": "sicon-hashtag",
                             "value": null,
-                            "required": false,
+                            "required": true,
                             "step": 0.1,
                             "minimum": -10.1,
-                            "maximum": "99999999999"
+                            "maximum": null
                         }
                     ],
                     "value": [],
