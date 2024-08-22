@@ -1066,7 +1066,7 @@
                     "id": "string",
                     "type": "string",
                     "format": "text",
-                    "label": "String",
+                    "label": "title",
                     "description": null,
                     "labelHTML": null,
                     "placeholder": "Placeholder text ..",
