@@ -1005,6 +1005,21 @@
                             "required": false
                         },
                         {
+                            "id": "baner2.description",
+                            "type": "string",
+                            "format": "richtext",
+                            "label": "Rich Text",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Your text here ..",
+                            "icon": "sicon-touch-type",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 60,
+                            "maxLength": 1000
+                        },
+                        {
                             "id": "baner2.button_text",
                             "type": "string",
                             "format": "text",
@@ -1018,15 +1033,6 @@
                             "required": true,
                             "minLength": "3",
                             "maxLength": 30
-                        },
-                        {
-                            "id": "baner2.description",
-                            "type": "static",
-                            "format": "description",
-                            "label": "Description",
-                            "value": null,
-                            "variant": "h1",
-                            "icon": "sicon-format-size"
                         },
                         {
                             "id": "baner2.url",
@@ -1046,7 +1052,7 @@
                     ],
                     "value": [],
                     "minLength": 1,
-                    "maxLength": 5
+                    "maxLength": "1"
                 }
             ]
         }
