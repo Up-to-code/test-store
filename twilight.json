@@ -824,10 +824,10 @@
                     "icon": "sicon-list-add",
                     "fields": [
                         {
-                            "id": "slider2.title_copy",
+                            "id": "slider2.title_build",
                             "type": "string",
                             "format": "text",
-                            "label": "title copy",
+                            "label": "title _build",
                             "description": null,
                             "labelHTML": null,
                             "placeholder": "Placeholder text ..",
