@@ -1055,6 +1055,13 @@
                     "maxLength": "1"
                 }
             ]
+        },
+        {
+            "key": "2f855993-264e-4cf5-9eb0-d9eacb542c98",
+            "title": "اقصام  مخصاص",
+            "icon": "sicon-store",
+            "path": "home.catogry2",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
