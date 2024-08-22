@@ -1,3 +1,7 @@
-<div>
-    Lofos
+<div class="flex flex-wrap gap-4 justify-center my-5">
+    {% for logo in component.logos %}
+        <a href="{{ logo.url }}" class="logo-item relative block p-4 transition-transform transform hover:scale-105 focus:scale-105 w-20 items-center">
+            <img src="{{ logo.image }}" alt="{{ logo.title }}" class="h-max object-contain filter grayscale brightness-0 invert transition-all hover:filter-none hover:brightness-100 hover:invert-0 hover:grayscale-0 focus:filter-none focus:brightness-100 focus:invert-0 focus:grayscale-0 drop-shadow-md"/>
+        </a>
+    {% endfor %}
 </div>
