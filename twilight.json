@@ -1082,7 +1082,7 @@
                             "placeholder": "e.g. https://hostname.com/image.png",
                             "icon": "sicon-image",
                             "value": null,
-                            "required": false
+                            "required": true
                         },
                         {
                             "id": "catogry.url",
@@ -1095,7 +1095,7 @@
                             "placeholder": "e.g. https://salla.sa",
                             "icon": "sicon-link",
                             "value": null,
-                            "required": false,
+                            "required": true,
                             "minLength": 6,
                             "maxLength": 30
                         }
