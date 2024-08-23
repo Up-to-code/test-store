@@ -1,34 +1,46 @@
-{#
-| Variable        | Type       | Description                                                      |
+{# | Variable | Type | Description |
 |-----------------|------------|------------------------------------------------------------------|
-| display_all_url | ?string    | If it's existed, mean should show load more link to this url     |
-| title           | string     |                                                                  |
-| products        | Products[] |                                                                  |
-| position        | Int        | Sorting number start from zero                                   |
-| limit           | Int        | Number of products to be shown
-#}
-{% set is_vertical = theme.settings.get('vertical_fixed_products', true) %}
+| display_all_url | ?string | If it's existed, mean should show load more link
+to this url | | title | string | | | products | Products[] | | | position | Int
+| Sorting number start from zero | | limit | Int | Number of products to be
+shown #} {% set is_vertical = theme.settings.get('vertical_fixed_products',
+true) %}
 <section class="s-block container">
-    {% if title %}
-      <div class="s-block__title">
-        <div class="right-side">
-          <h2>{{ title }}</h2>
-          {# <p>عنوان فرعي توصيفي صغير</p> #}
-        </div>
-        {% if display_all_url %}
-            <a href="{{ display_all_url }}" class="s-block__display-all">{{ trans('blocks.home.display_all') }} <i class="sicon-arrow-left"></i></a>
-        {% endif %}
-      </div>
+  {% if title %}
+  <div class="s-block__title">
+    <div class="right-side">
+      <h2>{{ title }}</h2>
+      {#
+      <p>عنوان فرعي توصيفي صغير</p>
+      #}
+    </div>
+    {% if display_all_url %}
+    <a href="{{ display_all_url }}" class="s-block__display-all"
+      >{{ trans("blocks.home.display_all") }} <i class="sicon-arrow-left"></i
+    ></a>
     {% endif %}
+  </div>
+  {% endif %}
+  <div class="flex flex-wrap justify-center gap-5">
+    {% for item in products %}
+    <div
+      class="min-h-[200px] rounded-md max-w-[200px] overflow-hidden transition-transform transform hover:scale-105  justify-center flex flex-col items-center"
+    >
+      <div class="h-[150px] overflow-hidden relative flex justify-end items-end rounded">
+        <img
+          src="{{ item.image.url }}"
+          alt="{{ item.name }}"
+          class="w-full h-full object-contain filter grayscale transition-transform duration-300 hover:grayscale-0 hover:scale-110"
+        />
+        <div class="absolute top-[-4px] right-[-25px] px-8 py-2 bg-primary text-white rotate-45">
+          {{ item.price }}
+        </div>
+      </div>
+      <div class="p-4">
+        <p class="text-lg font-semibold">{{ item.name }}</p>
+      </div>
+    </div>
 
-    <salla-products-list
-      source="selected"
-      limit="{{ limit }}"
-      source-value="[{{ products|map((product) => product.id)|join(',') }}]"
-      class="{{is_vertical ? 'vertical-products' : 'horizontal-products'}}"
-      {{is_vertical ? '' : 'horizontal-cards'}}
-      >
-    </salla-products-list>
+    {% endfor %}
+  </div>
 </section>
-
-

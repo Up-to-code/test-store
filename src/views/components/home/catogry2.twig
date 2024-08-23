@@ -1,0 +1,12 @@
+<div class="flex flex-wrap my-10 px-5 md:px-0 gap-10  w-10/12 m-auto">
+    {% for item in component.catogry %}
+    <a href="{{ item.url }}" class="catogry-item overflow-hidden rounded-lg transition-all duration-300 transform hover:scale-105">
+      <img 
+        src="{{ item.image }}" 
+        alt="Card" 
+        class="w-full max-w-[100px] h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-300 "
+      />
+    </a>
+    {% endfor %}
+  </div>
+  
