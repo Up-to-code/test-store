@@ -1,6 +1,23 @@
 // Define the color variable
 $primary-color: #2aca8f;
-
+*{
+  color: white;
+}
+.text-white{
+  color: white;
+}
+.s-payments-list-item{
+  background-color: white;
+}
+salla-slider.details-slider .s-slider-container{
+  border: none;
+   
+}
+// blur 
+.backdrop-blur-md{
+  backdrop-filter: blur(100px); /* Adjust the blur intensity */
+  background-color: rgba(28, 28, 28, 0.5); /* Optional: Adds a semi-transparent black background */
+}
 // Use the variable in your styles
 .btn--close {
   color: $primary-color;
@@ -9,7 +26,62 @@ $primary-color: #2aca8f;
 .main-menu > li > a[href*="offer"] {
   color: $primary-color;
 }
+input {
+  background-color: transparent;
+  color: #838383;
+}
+.s-user-profile-field-label ,
+.s-user-settings-section-title,.s-product-card-content-title a{
+  color: #e5e5e5;
+}
+ 
 
 .s-cart-summary-count {
   display: none;
+}
+.s-modal-overlay,
+.s-user-menu-toggler.opened::before {
+  backdrop-filter: blur(100px); /* Adjust the blur intensity */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional: Adds a semi-transparent black background */
+  position: fixed; /* Ensures the overlay covers the entire screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.s-modal-body,
+.s-user-menu-dropdown,
+.s-user-settings-section ,
+.s-product-card-entry,
+.product-form,
+.bg-zinc{
+  background-color: rgb(35, 35, 35);
+  color: white;
+}
+.s-modal-close,
+.s-user-menu-trigger-slot,
+.s-user-menu-trigger,
+.s-comments-product,
+.bg-white,
+.no-content-placeholder .icon {
+  background-color: transparent; /* Optional: Adds a semi-transparent black background */
+}
+.s-login-modal-label,
+.s-modal-title,
+.s-user-menu-dropdown-item-title {
+  color: white;
+}
+.s-tel-input-control,
+.s-login-modal-input,
+.iti__selected-dial-code,
+#iti-0__country-listbox,
+.form-input {
+  color: black;
+  font-size: 15px;
+  line-height: 15px;
 }

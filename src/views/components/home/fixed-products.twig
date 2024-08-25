@@ -5,7 +5,7 @@ to this url | | title | string | | | products | Products[] | | | position | Int
 | Sorting number start from zero | | limit | Int | Number of products to be
 shown #} {% set is_vertical = theme.settings.get('vertical_fixed_products',
 true) %}
-<section class="s-block container">
+<section class="s-block container px-4">
   {% if title %}
   <div class="s-block__title">
     <div class="right-side">
@@ -21,11 +21,12 @@ true) %}
     {% endif %}
   </div>
   {% endif %}
-  <div class="flex flex-wrap justify-center gap-5">
+  <div class="flex flex-wrap items-center gap-5 px-4">
     {% for item in products %}
     <div
       class="min-h-[200px] rounded-md max-w-[200px] overflow-hidden transition-transform transform hover:scale-105  justify-center flex flex-col items-center"
     >
+    <a href="{{ item.url }}">
       <div class="h-[150px] overflow-hidden relative flex justify-end items-end rounded">
         <img
           src="{{ item.image.url }}"
@@ -36,11 +37,16 @@ true) %}
           {{ item.price }}
         </div>
       </div>
+    </a>
       <div class="p-4">
         <p class="text-lg font-semibold">{{ item.name }}</p>
       </div>
+      <salla-add-product-button
+        product-status="{{ item.status }}"
+        product-id="{{ item.id }}"
+      ></salla-add-product-button>
     </div>
-
+    
     {% endfor %}
   </div>
 </section>

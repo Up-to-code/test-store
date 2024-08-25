@@ -46,7 +46,7 @@
   </div>
 
   {# Main Nav #}
-  <div id="mainnav" class="main-nav-container shadow-default   bg-gray-950 text-zinc-300">
+  <div id="mainnav" class="main-nav-container shadow-default   bg-gray-950 text-zinc-300 ">
       <div class="inner bg-inherit ">
           <div class="container">
               <div class="flex items-stretch justify-between relative">
@@ -76,7 +76,7 @@
                     <salla-cart-summary class="relative ml-4 rtl:ml-[unset] rtl:mr-4">
                       <i class="text-2xl sicon-shopping-bag text-white"></i>
                       {% if cart.items_count > 0 %}
-                        <span class="absolute -top-1 -right-2 bg-primary text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">{{ cart.items_count }}</span>
+                       <salla-cart-items-count class="absolute -top-1 -right-2 bg-primary text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">{{ cart.items_count }}</salla-cart-items-count>
                       {% endif %}
                     </salla-cart-summary>
                   </div>
