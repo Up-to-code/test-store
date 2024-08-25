@@ -1,7 +1,7 @@
 {
     "name": {
         "ar": "Test-store",
-        "en": "Test-store"
+        "en": "TG"
     },
     "repository": "https://github.com/Up-to-code/test-store",
     "author_email": "133324agh@gmail.com",
@@ -1124,7 +1124,7 @@
     ],
     "support_url": "https://example.com",
     "description": {
-        "ar": "",
-        "en": ""
+        "ar": null,
+        "en": null
     }
 }
