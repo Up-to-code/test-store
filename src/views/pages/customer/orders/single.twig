@@ -207,9 +207,9 @@
                     {% endif %}
 
                     {% for item in package.items %}
-                        <div data-order-item-id="{{ item.id }}" data-order-item-product-id="{{ item.product.id }}" class="order-item bg-white p-5 border-b border-gray-100 first:rounded-t-md last:rounded-b-md last:border-none">
+                        <div data-order-item-id="{{ item.id }}" data-order-item-product-id="{{ item.product.id }}" class="  p-5     first:rounded-t-md last:rounded-b-md  border-none">
 
-                            <div class="mb-5 last:mb-0">
+                            <div class="mb-5 last:mb-0 ">
                                 {% if item.product %}
                                     <div class="flex rtl:space-x-reverse space-x-5 mb-4">
                                         <a href="{{ item.product.url }}" class="shrink-0">
@@ -510,7 +510,7 @@
             {% endif %} 
         </div>
 
-        <div class="bg-white rounded-md px-6">
+        <div class="bg-white rounded-md px-6 w-[90%] m-auto px-6">
             <h2 id="summary-heading" class="sr-only">Order summary</h2>
             <div class="flow-root">
                 <dl class="text-sm text-gray-500 divide-y divide-border-color">
